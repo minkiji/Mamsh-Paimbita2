@@ -184,7 +184,7 @@ header {
   gap: 35px;
 }
 
-.featured img {
+.featured-img {
   width: 500px;
   height: 650px;
   object-fit: cover;
