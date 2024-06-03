@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mamsh Paimbita</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/icon/yujin-glasses.png">
+</head>
+
+<body>
+  <main>
+
+    <section id="home">
+
+      <div class="main-navbar">
+        <header>
+          <nav>
+            <div class="navbar">
+
+              <div class="logo">
+                <a href="#home"><img src="img/icon/Mamsh Paimbita.png" alt="Mamsh Paimbita Logo"></a>
+              </div>
+
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+
+              <div class="nav-btn">
+                <a href="#"><button>How to checkout?</button></a>
+              </div>
+
+            </div>
+          </nav>
+       </header>
+      </div>
+
+    </section>
+
+    <section class="title-section">
+
+      <div class="title-container">
+
+        <div class="title">
+          <h1 class="title-span">
+            <div><span>Mamsh</span></div>
+            <div><span>Paimbita</span></div>
+          </h1>
+          <p>Welcome to Mamsh Paimbita, where creativity meets love and celebration.
+            Elevate your special day with our exquisite wedding invitations that reflect your
+            unique journey together. Our passion for design, attention to detail, and
+            commitment to creating invitations that resonate will make your wedding a
+            cherished memory from the very start. Join us in turning your vision into an
+            artful reality.</p>
+
+          <div class="shop-col-btn">
+            <div class="shop-btn">
+              <a href="#"><button>Shop now</button></a>
+            </div>
+            <div class="collections-btn">
+              <a href="#"><button>Collections</button></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="invi-page">
+          <img class="img-large" src="img/minimalist/250746260_377010560876424_3249684266020157430_n.jpg"
+            alt="Invitation">
+          <img class="img-small" src="img/minimalist/272947103_434629061781240_1129211755456637575_n.jpg"
+            alt="Invitation">
+          <img class="img-small" src="img/minimalist/248166105_370504428193704_4638445121696745755_n.jpg"
+            alt="Invitation">
+          <img class="img-large" src="img/minimalist/441544713_757779553148268_437625686332911446_n.jpg"
+            alt="Invitation">
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section id="services" class="services">
+
+      <div class="service-container">
+        <div class="service-offer">
+          <h1>Services</h1>
+          <div class="hr-service" style="transition-delay: 0.2s;">
+            <hr>
+          </div>
+        </div>
+
+        <div class="we-offer-container">
+          <div class="we-offer" style="transition-delay: 0.4s;">
+            <h2>Layout</h2>
+            <p>Discover the art of beautifully designed layouts with
+              our wedding invitations. Our expert designers meticulously
+              craft each layout to ensure your invitation is visually
+              stunning and perfectly balanced. Whether you prefer classic
+              elegance or modern chic, our layouts will capture the essence
+              of your special day and make a lasting impression.</p>
+            <div class="view-more"><a href="#">View more ></a></div>
+          </div>
+          <div class="we-offer" style="transition-delay: 0.6s;">
+            <h2>Invitation</h2>
+            <p>Explore our exquisite collection of wedding invitations,
+              each designed to reflect the unique style and personality
+              of your celebration. From traditional to contemporary,
+              our invitations are crafted with the utmost care and
+              attention to detail. Let our beautiful invitations set the
+              tone for your special day and create a memorable first
+              impression for your guests.</p>
+            <div class="view-more"><a href="#">View more ></a></div>
+          </div>
+          <div class="we-offer" style="transition-delay: 0.8s;">
+            <h2>Print</h2>
+            <p>Experience the highest quality printing for your
+              wedding invitations. We use premium materials
+              and state-of-the-art printing techniques to
+              ensure that every detail is crisp and vibrant. From
+              luxurious paper options to a variety of finishes, our
+              printing services will bring your invitation design
+              to life with unparalleled quality and precision.</p>
+            <div class="view-more"><a href="#">View more ></a></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="collections">
+
+      <div class="sec-container">
+        <h1>Explore Our Collections</h1>
+        <p>Welcome to our collection page! Here, you can browse through our exquisite selection of wedding invitations.
+          Each design is thoughtfully crafted toreflect the unique essence of your special day. You'll find a variety of
+          layouts, styles, and themes to suit
+          any wedding vision. Discover the perfect invitation that will set the tone for your celebration and leave a
+          lasting impression on your guests.</p>
+        <a class="view-button" href=""><button>View here</button></a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script>
+
+    const paragraphs = document.querySelectorAll(".we-offer, .service-offer, .hr-service, .sec-container, .invi-page");
+
+    document.addEventListener("scroll", function () {
+      paragraphs.forEach((paragraph) => {
+        if (isInView(paragraph)) {
+          paragraph.classList.add("paragraph--visible");
+        }
+      })
+    })
+
+    function isInView(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.bottom > 0 &&
+        rect.top <
+        (window.innerheight - 150 || document.documentElement.clientHeight - 150)
+      )
+    }
+
+    document.addEventListener('scroll' , () => {
+      const header = document.querySelector('header');
+
+      if (window.scrollY > 0) {
+        header.classlist.add('scrolled');
+      } else {
+        header.classlist.remove('scrolled');
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
