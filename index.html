@@ -17,7 +17,6 @@
   <main>
 
     <section>
-
       <div class="main-navbar">
         <header>
           <nav>
@@ -30,7 +29,15 @@
               <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#">Collections</a></li>
+                <li class="dropdown">
+                  <a href="#collection" class="dropbtn">Collections<i style="margin-left: 7px;" class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">Invitation</a>
+                    <a href="#">Layouts</a>
+                    <a href="#">Prices</a>
+                  </div>
+                </li>
+                <li><a href="#faq">FAQs</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
 
@@ -42,13 +49,11 @@
           </nav>
        </header>
       </div>
-
     </section>
 
     <section id="home" class="title-section">
 
       <div class="title-container">
-
         <div class="title">
           <h1 class="title-span">
             <div><span>Mamsh</span></div>
@@ -80,7 +85,6 @@
           <img class="img-large" src="img/minimalist/441544713_757779553148268_437625686332911446_n.jpg"
             alt="Invitation">
         </div>
-
       </div>
 
     </section>
@@ -152,38 +156,6 @@
 
     </section>
 
-    <section class="faqs">
-      
-      <div class="faq-header">
-        <h1>Frequently Asked Questions</h1>
-        <div class="hr-service" style="transition-delay: 0.2s;">
-          <hr>
-        </div>
-      </div>
-
-      <div class="faq-container">
-        <div class="faq-card" style="transition-delay: 0.4s;">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <h2 class="animate-delay" style="transition-delay: 0.2s;">What is the lead time?</h2>
-          <p class="animate-delay" style="transition-delay: 0.4s;">A: The lead time is 2 weeks, but we can rush orders if needed. Please contact us directly to discuss expedited shipping options and additional fees.</p>
-          <a class="animate-delay" style="transition-delay: 0.6s;" href="#">View more ></a>
-        </div>
-        <div class="faq-card" style="transition-delay: 0.6s;">
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <h2 class="animate-delay" style="transition-delay: 0.8s;">Do you have a physical store?</h2>
-          <p class="animate-delay" style="transition-delay: 1s;">A: Currently, we operate solely online. We do not participate in trade shows, pop-ups, or events. All our products are available exclusively through our online store.</p>
-          <a class="animate-delay" style="transition-delay: 1.2s;" href="#">View more ></a>
-        </div>
-        <div class="faq-card" style="transition-delay: 0.8s;">
-          <i class="fa fa-weixin" aria-hidden="true"></i>
-          <h2 class="animate-delay" style="transition-delay: 1.4s;">Why are you not responding?</h2>
-          <p class="animate-delay" style="transition-delay: 1.6s;">A: because we have a lot of clients and we will respond to your message as soon as possible. We appreciate your patience and understanding.</p>
-          <a class="animate-delay" style="transition-delay: 1.8s;" href="#">View more ></a>
-        </div>
-      </div>
-
-    </section>
-
     <section id="collection" class="collections">
 
       <div class="sec-container">
@@ -198,10 +170,99 @@
 
     </section>
 
+    <section id="faq" class="faqs">
+      
+      <div class="faq-header">
+        <h1>FAQs</h1>
+        <div class="hr-service" style="transition-delay: 0.2s;">
+          <hr>
+        </div>
+      </div>
+
+
+      <div class="faq-parent">
+        <div class="faqs-container">
+          <ul class="faq" style="transition-delay: 0.2s;">
+            <li>
+              <input type="checkbox" name="faq" id="first">
+              <label for="first">What is the lead time?</label>
+              <div class="content">
+                <p>A: The lead time is 2 weeks, but we can rush orders if needed. Please contact us directly to discuss expedited shipping options and additional fees.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq" style="transition-delay: 0.4s;">
+            <li>
+              <input type="checkbox" name="faq" id="second">
+              <label for="second">Do you have a physical store?</label>
+              <div class="content">
+                <p>A: Currently, we operate solely online. We do not participate in trade shows, pop-ups, or events. All our products are available exclusively through our online store.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq" style="transition-delay: 0.6s;">
+            <li>
+              <input type="checkbox" name="faq" id="third">
+              <label for="third">Do you ship internationally?</label>
+              <div class="content">
+                <p>A: Yes, we offer international shipping. Shipping costs and delivery times will vary depending on your location.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq" style="transition-delay: 0.8s;">
+            <li>
+              <input type="checkbox" name="faq" id="fourth">
+              <label for="fourth">Why are you not responding to my messages?</label>
+              <div class="content">
+                <p>A: because we have a lot of clients and we will respond to your message as soon as possible. We appreciate your patience and understanding.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="faqs-container">
+          <ul class="faq" style="transition-delay: 0.3s;">
+            <li>
+              <input type="checkbox" name="faq" id="fifth">
+              <label for="fifth">What is the minimum order quantity?</label>
+              <div class="content">
+                <p>A: The minimum order is 20 pieces, which includes a free layout. If you order below the minimum, a layout fee of 300 pesos will be charged.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq" style="transition-delay: 0.5s;">
+            <li>
+              <input type="checkbox" name="faq" id="sixth">
+              <label for="sixth">What types of wedding invitations do you offer?</label>
+              <div class="content">
+                <p>A: We offer a variety of wedding invitations, including classic, modern, rustic, floral, and themed designs. Custom designs are also available.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq" style="transition-delay: 0.7s;">
+            <li>
+              <input type="checkbox" name="faq" id="seventh">
+              <label for="seventh">Can I use my own artwork or design?</label>
+              <div class="content">
+                <p>A: Yes, you can upload your own design or artwork. Please ensure that the files meet our specifications for best print quality.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq" style="transition-delay: 0.9s;">
+            <li>
+              <input type="checkbox" name="faq" id="eighth">
+              <label for="eighth">Do you offer a Ditigal Invitation?</label>
+              <div class="content">
+                <p>A: Yes, we offer various types of e-invites, including video invitations, website invitations, and flipbook invitations.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-
     <section class="footer">
 
       <div class="footer-container">
@@ -214,7 +275,7 @@
             <ul>
               <li class="animate-delay" style="transition-delay: 0.3s;"><a href="#">Product</a></li>
               <li class="animate-delay" style="transition-delay: 0.4s;"><a href="#">Overview</a></li>
-              <li class="animate-delay" style="transition-delay: 0.5s;"><a href="#">Marketplace</a></li>
+              <li class="animate-delay" style="transition-delay: 0.5s;"><a href="https://shopee.ph/marissearenascayabyab" target="_blank">Marketplace</a></li>
               <li class="animate-delay" style="transition-delay: 0.6s;"><a href="#">Page</a></li>
             </ul>
           </div>
@@ -222,7 +283,7 @@
             <ul>
               <li class="animate-delay" style="transition-delay: 0.7s;"><a href="#">Resources</a></li>
               <li class="animate-delay" style="transition-delay: 0.8s;"><a href="#">Costumer Service</a></li>
-              <li class="animate-delay" style="transition-delay: 0.9s;"><a href="#">FAQ</a></li>
+              <li class="animate-delay" style="transition-delay: 0.9s;"><a href="#faq">FAQ</a></li>
               <li class="animate-delay" style="transition-delay: 1s;"><a href="#">Blog</a></li>
             </ul>
           </div>
@@ -241,7 +302,6 @@
       </div>
 
       <div class="footer-socials">
-
         <div class="all-rights">
           <p>© All Rights Reserved</p>
         </div>
@@ -251,46 +311,12 @@
           <a href="https://shopee.ph/marissearenascayabyab" target="_blank"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
           <a href="https://www.tiktok.com/@mamsh_paimbita" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
         </div>
-
       </div>
       
     </section>
-
   </footer>
 
-
-  <script>
-
-    const paragraphs = document.querySelectorAll(".we-offer, .service-offer, .hr-service, .sec-container, .featured-header, .featured-img, .faq-header, .faq-card, .animate-delay, .footer-outro, .footer-items-container");
-
-    document.addEventListener("scroll", function () {
-      paragraphs.forEach((paragraph) => {
-        if (isInView(paragraph)) {
-          paragraph.classList.add("paragraph--visible");
-        }
-      })
-    })
-
-    function isInView(element) {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.bottom > 0 &&
-        rect.top <
-        (window.innerheight - 150 || document.documentElement.clientHeight - 150)
-      )
-    }
-
-    document.addEventListener('scroll' , () => {
-      const header = document.querySelector('header');
-
-      if (window.scrollY > 0) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
-  </script>
+  <script src="index.js"></script>
 
 </body>
 
