@@ -16,7 +16,7 @@
 <body>
   <main>
 
-    <section id="home">
+    <section>
 
       <div class="main-navbar">
         <header>
@@ -45,7 +45,7 @@
 
     </section>
 
-    <section class="title-section">
+    <section id="home" class="title-section">
 
       <div class="title-container">
 
@@ -284,9 +284,9 @@
       const header = document.querySelector('header');
 
       if (window.scrollY > 0) {
-        header.classlist.add('scrolled');
+        header.classList.add('scrolled');
       } else {
-        header.classlist.remove('scrolled');
+        header.classList.remove('scrolled');
       }
     });
 
