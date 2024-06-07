@@ -1,0 +1,21 @@
+@media (max-width: 1820px) {
+
+  .mySlides img {
+    width: 800px;
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width: 1720px) {
+
+  .mySlides img {
+    width: 700px;
+    vertical-align: middle;
+  }
+
+  footer {
+    display: none;
+  }
+
+}

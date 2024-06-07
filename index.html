@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -32,13 +33,12 @@
                 <li class="dropdown">
                   <a href="#collection" class="dropbtn">Collections<i style="margin-left: 7px;" class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <div class="dropdown-content">
-                    <a href="#">Invitation</a>
-                    <a href="#">Layouts</a>
+                    <a href="collections-invitation.html">Invitation</a>
                     <a href="#">Prices</a>
                   </div>
                 </li>
                 <li><a href="#faq">FAQs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
 
               <div class="nav-btn">
@@ -75,16 +75,29 @@
           </div>
         </div>
 
-        <div class="invi-page">
-          <img class="img-large" src="img/minimalist/250746260_377010560876424_3249684266020157430_n.jpg"
-            alt="Invitation">
-          <img class="img-small" src="img/minimalist/272947103_434629061781240_1129211755456637575_n.jpg"
-            alt="Invitation">
-          <img class="img-small" src="img/minimalist/248166105_370504428193704_4638445121696745755_n.jpg"
-            alt="Invitation">
-          <img class="img-large" src="img/minimalist/441544713_757779553148268_437625686332911446_n.jpg"
-            alt="Invitation">
-        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+              <img src="img/photographers-photo/79d0eac0-3117-4c55-813b-78baea22117c.jpg">
+          </div>
+          <div class="mySlides fade">
+              <img src="img/photographers-photo/d07bc278-b121-4406-9043-78cfd592614c.jpg">
+          </div>
+          <div class="mySlides fade">
+              <img src="img/photographers-photo/e2b6afc6-8a67-4ffb-86ba-39951017a460.jpg">
+          </div>
+          <div class="mySlides fade">
+              <img src="img/photographers-photo/398c5f79-6c24-4a6c-9b45-9afbdfe5a5f9.jpg">
+          </div>
+          <div class="mySlides fade">
+              <img src="img/photographers-photo/c737efdf-ca71-46da-9e04-66a7cfdf5519.jpg">
+          </div>
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
       </div>
 
     </section>
@@ -173,12 +186,11 @@
     <section id="faq" class="faqs">
       
       <div class="faq-header">
-        <h1>FAQs</h1>
+        <h1>Frequently Asked Questions</h1>
         <div class="hr-service" style="transition-delay: 0.2s;">
           <hr>
         </div>
       </div>
-
 
       <div class="faq-parent">
         <div class="faqs-container">
