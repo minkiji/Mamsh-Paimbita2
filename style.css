@@ -701,12 +701,17 @@ footer {
 }
 
 .contact p {
+  color: #3f424a;
   line-height: 2;
 }
 
 .contact-header {
   font-size: 18px;
   font-weight: 650;
+}
+
+.contact-footer {
+  color: #3f424a;
 }
 
 .social-contact-parent {
