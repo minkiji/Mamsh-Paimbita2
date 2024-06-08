@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" href="img/icon/yujin-glasses.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
 </head>
 
 <body>
@@ -51,55 +54,67 @@
       </div>
     </section>
 
-    <section class="contact-page">
+    <section class="prices-sec">
 
-      <div class="contact-container">
-        <div class="contact">
-          <h1>Let's create your beautiful<br>Invitation <i style="color: #997C5E;">together</i></h1>
-          <p>You can always send us a message or email.</p>
-          <p>We'd be happy to help you out.</p>
-          <p>Operating: Monday to Saturday (Sunday off)</p>
-        </div>
-      </div>
-
-      <div class="social-contact-parent">
-        <div class="social-contact">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <div>
-            <p class="contact-header">Shoot us an email</p>
-            <p class="contact-footer">mamshpaimbita@gmail.com</p>
-          </div>
-        </div>
-        <div class="social-contact">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <div>
-            <p class="contact-header">Phone Call</p>
-            <p class="contact-footer">0000-000-0000</p>
-          </div>
-        </div>
-        <div class="social-contact">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          <div>
-            <p class="contact-header">Message us on facebook</p>
-            <p class="contact-footer">Mamsh Paimbita</p>
-          </div>
+      <div class="prices-parent">
+        <div class="prices-intro">
+          <h2>Prices</h2>
+          <p>Below you'll find detailed information on each set, including prices and the items included. Explore our collection to find the perfect 
+            invitation suite that reflects your love story and sets the tone for your unforgettable day.</p>
         </div>
       </div>
 
     </section>
 
-    <section class="bg-background">
-      
-      <div class="contact-team-parent">
-        <div class="contact-team">
-          <h1>Get in touch<br>with us today</h1>
-          <p>If you have any questions about which plan is right for you, please don't hesitate to contact our team. We are here to help and would love to discuss the options with you.</p>
-        </div>
+    <section class="prices-collections-section">
+
+      <div class="prices-grid">
+        <a href="img/prices/price.jpg" class="fluidbox">
+          <img src="img/prices/price.jpg" alt="Image 1">
+        </a>
+        <a href="img/prices/price1.png" class="fluidbox">
+          <img src="img/prices/price1.png" alt="Image 2">
+        </a>
+        <a href="img/prices/price2.png" class="fluidbox">
+          <img src="img/prices/price2.png" alt="Image 3">
+        </a>
+        <a href="img/prices/price3.png" class="fluidbox">
+          <img src="img/prices/price3.png" alt="Image 4">
+        </a>
+        <a href="img/prices/price4.png" class="fluidbox">
+          <img src="img/prices/price4.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price5.png" class="fluidbox">
+          <img src="img/prices/price5.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price6.png" class="fluidbox">
+          <img src="img/prices/price6.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price7.png" class="fluidbox">
+          <img src="img/prices/price7.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price8.png" class="fluidbox">
+          <img src="img/prices/price8.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price9.png" class="fluidbox">
+          <img src="img/prices/price9.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price10.png" class="fluidbox">
+          <img src="img/prices/price10.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price11.png" class="fluidbox">
+          <img src="img/prices/price11.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price12.png" class="fluidbox">
+          <img src="img/prices/price12.png" alt="Image 5">
+        </a>
+        <a href="img/prices/price13.png" class="fluidbox">
+          <img src="img/prices/price13.png" alt="Image 5">
+        </a>
       </div>
 
     </section>
   </main>
-
 
   <footer>
     <section class="footer">
@@ -156,6 +171,18 @@
   </footer>
 
   <script src="index.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('a.fluidbox').fluidbox();
+
+      // Close Fluidbox on window scroll
+      $(window).scroll(function () {
+        $('a.fluidbox').fluidbox('close');
+      });
+
+    });
+  </script>
 
 </body>
 

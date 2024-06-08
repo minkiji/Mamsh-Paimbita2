@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" href="img/icon/yujin-glasses.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
                   <a href="#collection" class="dropbtn">Collections<i style="margin-left: 7px;" class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <div class="dropdown-content">
                     <a href="collections-invitation.html">Invitation</a>
-                    <a href="#">Prices</a>
+                    <a href="collections-prices.html">Prices</a>
                   </div>
                 </li>
                 <li><a href="#faq">FAQs</a></li>
@@ -111,10 +114,19 @@
         </div>
       </div>
 
-      <div class="featured">
-        <img class="featured-img" style="transition-delay: 0.4s;" src="img/minimalist/250746260_377010560876424_3249684266020157430_n.jpg" alt="Featured Invitation">
-        <img class="featured-img" style="transition-delay: 0.6s;" src="img/minimalist/251956116_377010467543100_7857916472944356879_n.jpg" alt="Featured Invitation">
-        <img class="featured-img" style="transition-delay: 0.8s;" src="img/minimalist/252062567_377010520876428_5396024993872569303_n.jpg" alt="Featured Invitation">
+      <div class="featured-grid">
+        <a href="img/featured/250746260_377010560876424_3249684266020157430_n.jpg" class="fluidbox">
+          <img src="img/featured/250746260_377010560876424_3249684266020157430_n.jpg" alt="Image 5">
+        </a>
+        <a href="img/featured/4597d414-f294-4a3c-b7f5-23afa94eff54.jpg" class="fluidbox">
+          <img src="img/featured/4597d414-f294-4a3c-b7f5-23afa94eff54.jpg" alt="Image 5">
+        </a>
+        <a href="img/featured/305a3981-f4b9-43b9-8f9d-bfdb37cee01b.jpg" class="fluidbox">
+          <img src="img/featured/305a3981-f4b9-43b9-8f9d-bfdb37cee01b.jpg" alt="Image 5">
+        </a>
+        <a href="img/featured/f5b5665c-eccc-4593-a61e-013efd871462.jpg" class="fluidbox">
+          <img src="img/featured/f5b5665c-eccc-4593-a61e-013efd871462.jpg" alt="Image 5">
+        </a>
       </div>
 
     </section>
@@ -329,6 +341,18 @@
   </footer>
 
   <script src="index.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('a.fluidbox').fluidbox();
+
+      // Close Fluidbox on window scroll
+      $(window).scroll(function () {
+        $('a.fluidbox').fluidbox('close');
+      });
+
+    });
+  </script>
 
 </body>
 
