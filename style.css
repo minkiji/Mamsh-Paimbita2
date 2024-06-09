@@ -40,16 +40,18 @@ header.scrolled {
   width: 80px;
 }
 
+.logo-hamburger {
+  display: none;
+}
+
 .navbar-width {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 85%;
   margin: 0 auto;
+  position: relative;
 }
 
 .nav_menu {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,7 +62,7 @@ header.scrolled {
   align-items: center;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-  z-index: 1000; /* Ensure it is below the hamburger menu */
+  z-index: 1000;
 }
 
 .nav_menu ul li {
@@ -196,22 +198,23 @@ header.scrolled {
   color: #997C5E;
 }
 
+/* hamburger menu styles */
+
 .hamburger_menu {
   width: 35px;
   height: 30px;
-  position: absolute;
-  top: 30px;
-  right: 20px;
+  position: relative;
+  top: 12px;
   cursor: pointer;
-  z-index: 1001; /* Ensure hamburger menu is on top */
+  z-index: 1001;
   opacity: 1;
-  display: none; /* Hide by default */
+  display: none;
 }
 
 .hamburger_bar {
   height: 5px;
   width: 100%;
-  background: #000000;
+  background: #997C5E;
   border-radius: 100vh;
   position: absolute;
   transition: all 0.3s ease-in-out;
@@ -221,7 +224,7 @@ header.scrolled {
   content: "";
   width: 100%;
   height: 5px;
-  background: #000000;
+  background: #997C5E;
   border-radius: 100vh;
   position: absolute;
   top: -8px;
@@ -232,7 +235,7 @@ header.scrolled {
   content: "";
   width: 100%;
   height: 5px;
-  background: #000000;
+  background: #997C5E;
   border-radius: 100vh;
   position: absolute;
   bottom: -8px;
@@ -264,6 +267,14 @@ header.scrolled {
   bottom: 0;
 }
 
+.hamburger_menu.open .hamburger_bar::before,
+.hamburger_menu.open .hamburger_bar::after {
+    background-color: white; /* Color when clicked */
+}
+
+/* end of hamburger menu styles */
+
+/* mamshpaimbita section */
 .title-section {
   width: 85%;
   margin: 0 auto;
@@ -606,14 +617,6 @@ input[type="checkbox"] {
 }
 
 /* ----------- footer ------------ */
-
-/*
-footer {
-  background-color: #F1E5D9;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-*/
 
 .footer {
   width: 85%;

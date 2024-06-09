@@ -58,7 +58,7 @@ const hamburgerMenu = document.querySelector('.hamburger_menu');
 const navMenu = document.querySelector('.nav_menu');
 
 hamburgerMenu.addEventListener('click', () => {
-    hamburgerMenu.classList.toggle('open');
+    hamburgerMenu.classList.toggle('open'); // Toggle 'open' class to change color
     if (navMenu.classList.contains('show')) {
         navMenu.classList.remove('show');
         setTimeout(() => {
