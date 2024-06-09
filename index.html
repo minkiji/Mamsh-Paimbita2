@@ -12,46 +12,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" href="img/icon/yujin-glasses.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
 </head>
 
 <body>
   <main>
 
     <section>
-      <div class="main-navbar">
-        <header>
-          <nav>
-            <div class="navbar">
-
+      <header>
+        <nav>
+          <div class="navbar-width">
+            <div class="hamburger_menu">
+              <div class="hamburger_bar"></div>
+            </div>
+            <div class="nav_menu">
               <div class="logo">
-                <a href="#home"><img src="img/icon/MP logo.png" alt="Mamsh Paimbita Logo"></a>
+                <a href="index.html"><img src="img/icon/MP logo.png" alt="Mamsh Paimbita Logo"></a>
               </div>
-
               <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
                 <li class="dropdown">
-                  <a href="#collection" class="dropbtn">Collections<i style="margin-left: 7px;" class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <a href="index.html#collection" class="dropbtn">Collections<i style="margin-left: 7px;"
+                      class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <div class="dropdown-content">
                     <a href="collections-invitation.html">Invitation</a>
                     <a href="collections-prices.html">Prices</a>
                   </div>
                 </li>
-                <li><a href="#faq">FAQs</a></li>
+                <li class="hidden-nav">
+                  <a href="collections-invitation.html">Invitations</a>
+                  <a href="collections-prices.html">Prices</a>
+                </li>
+                <li><a href="index.html#faq">FAQs</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-
               <div class="nav-btn">
                 <a href="#"><button>How to checkout?</button></a>
               </div>
-
             </div>
-          </nav>
-       </header>
-      </div>
+          </div>
+        </nav>
+      </header>
     </section>
 
     <section id="home" class="title-section">
@@ -80,33 +81,33 @@
 
         <div class="slideshow-container">
           <div class="mySlides fade">
-              <img src="img/photographers-photo/79d0eac0-3117-4c55-813b-78baea22117c.jpg">
+            <img src="img/photographers-photo/79d0eac0-3117-4c55-813b-78baea22117c.jpg">
           </div>
           <div class="mySlides fade">
-              <img src="img/photographers-photo/d07bc278-b121-4406-9043-78cfd592614c.jpg">
+            <img src="img/photographers-photo/d07bc278-b121-4406-9043-78cfd592614c.jpg">
           </div>
           <div class="mySlides fade">
-              <img src="img/photographers-photo/e2b6afc6-8a67-4ffb-86ba-39951017a460.jpg">
+            <img src="img/photographers-photo/e2b6afc6-8a67-4ffb-86ba-39951017a460.jpg">
           </div>
           <div class="mySlides fade">
-              <img src="img/photographers-photo/398c5f79-6c24-4a6c-9b45-9afbdfe5a5f9.jpg">
+            <img src="img/photographers-photo/398c5f79-6c24-4a6c-9b45-9afbdfe5a5f9.jpg">
           </div>
           <div class="mySlides fade">
-              <img src="img/photographers-photo/c737efdf-ca71-46da-9e04-66a7cfdf5519.jpg">
+            <img src="img/photographers-photo/c737efdf-ca71-46da-9e04-66a7cfdf5519.jpg">
           </div>
           <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
           </div>
-      </div>
+        </div>
 
     </section>
 
     <section id="featured" class="featured-section">
-      
+
       <div class="featured-header">
         <h1>Featured</h1>
         <div class="hr-service" style="transition-delay: 0.2s;">
@@ -115,18 +116,14 @@
       </div>
 
       <div class="featured-grid">
-        <a href="img/featured/250746260_377010560876424_3249684266020157430_n.jpg" class="fluidbox">
-          <img src="img/featured/250746260_377010560876424_3249684266020157430_n.jpg" alt="Image 5">
-        </a>
-        <a href="img/featured/4597d414-f294-4a3c-b7f5-23afa94eff54.jpg" class="fluidbox">
-          <img src="img/featured/4597d414-f294-4a3c-b7f5-23afa94eff54.jpg" alt="Image 5">
-        </a>
-        <a href="img/featured/305a3981-f4b9-43b9-8f9d-bfdb37cee01b.jpg" class="fluidbox">
-          <img src="img/featured/305a3981-f4b9-43b9-8f9d-bfdb37cee01b.jpg" alt="Image 5">
-        </a>
-        <a href="img/featured/f5b5665c-eccc-4593-a61e-013efd871462.jpg" class="fluidbox">
-          <img src="img/featured/f5b5665c-eccc-4593-a61e-013efd871462.jpg" alt="Image 5">
-        </a>
+        <img class="featured-img" style="transition-delay: 0.2s;"
+          src="img/featured/250746260_377010560876424_3249684266020157430_n.jpg" alt="Image 5">
+        <img class="featured-img" style="transition-delay: 0.4s;"
+          src="img/featured/4597d414-f294-4a3c-b7f5-23afa94eff54.jpg" alt="Image 5">
+        <img class="featured-img" style="transition-delay: 0.6s;"
+          src="img/featured/305a3981-f4b9-43b9-8f9d-bfdb37cee01b.jpg" alt="Image 5">
+        <img class="featured-img" style="transition-delay: 0.8s;"
+          src="img/featured/f5b5665c-eccc-4593-a61e-013efd871462.jpg" alt="Image 5">
       </div>
 
     </section>
@@ -196,7 +193,7 @@
     </section>
 
     <section id="faq" class="faqs">
-      
+
       <div class="faq-header">
         <h1>Frequently Asked Questions</h1>
         <div class="hr-service" style="transition-delay: 0.2s;">
@@ -211,7 +208,8 @@
               <input type="checkbox" name="faq" id="first">
               <label for="first">What is the lead time?</label>
               <div class="content">
-                <p>A: The lead time is 2 weeks, but we can rush orders if needed. Please contact us directly to discuss expedited shipping options and additional fees.</p>
+                <p>A: The lead time is 2 weeks, but we can rush orders if needed. Please contact us directly to discuss
+                  expedited shipping options and additional fees.</p>
               </div>
             </li>
           </ul>
@@ -220,7 +218,8 @@
               <input type="checkbox" name="faq" id="second">
               <label for="second">Do you have a physical store?</label>
               <div class="content">
-                <p>A: Currently, we operate solely online. We do not participate in trade shows, pop-ups, or events. All our products are available exclusively through our online store.</p>
+                <p>A: Currently, we operate solely online. We do not participate in trade shows, pop-ups, or events. All
+                  our products are available exclusively through our online store.</p>
               </div>
             </li>
           </ul>
@@ -229,7 +228,8 @@
               <input type="checkbox" name="faq" id="third">
               <label for="third">Do you ship internationally?</label>
               <div class="content">
-                <p>A: Yes, we offer international shipping. Shipping costs and delivery times will vary depending on your location.</p>
+                <p>A: Yes, we offer international shipping. Shipping costs and delivery times will vary depending on
+                  your location.</p>
               </div>
             </li>
           </ul>
@@ -238,7 +238,8 @@
               <input type="checkbox" name="faq" id="fourth">
               <label for="fourth">Why are you not responding to my messages?</label>
               <div class="content">
-                <p>A: because we have a lot of clients and we will respond to your message as soon as possible. We appreciate your patience and understanding.</p>
+                <p>A: because we have a lot of clients and we will respond to your message as soon as possible. We
+                  appreciate your patience and understanding.</p>
               </div>
             </li>
           </ul>
@@ -250,7 +251,8 @@
               <input type="checkbox" name="faq" id="fifth">
               <label for="fifth">What is the minimum order quantity?</label>
               <div class="content">
-                <p>A: The minimum order is 20 pieces, which includes a free layout. If you order below the minimum, a layout fee of 300 pesos will be charged.</p>
+                <p>A: The minimum order is 20 pieces, which includes a free layout. If you order below the minimum, a
+                  layout fee of 300 pesos will be charged.</p>
               </div>
             </li>
           </ul>
@@ -259,7 +261,8 @@
               <input type="checkbox" name="faq" id="sixth">
               <label for="sixth">What types of wedding invitations do you offer?</label>
               <div class="content">
-                <p>A: We offer a variety of wedding invitations, including classic, modern, rustic, floral, and themed designs. Custom designs are also available.</p>
+                <p>A: We offer a variety of wedding invitations, including classic, modern, rustic, floral, and themed
+                  designs. Custom designs are also available.</p>
               </div>
             </li>
           </ul>
@@ -268,7 +271,8 @@
               <input type="checkbox" name="faq" id="seventh">
               <label for="seventh">Can I use my own artwork or design?</label>
               <div class="content">
-                <p>A: Yes, you can upload your own design or artwork. Please ensure that the files meet our specifications for best print quality.</p>
+                <p>A: Yes, you can upload your own design or artwork. Please ensure that the files meet our
+                  specifications for best print quality.</p>
               </div>
             </li>
           </ul>
@@ -277,7 +281,8 @@
               <input type="checkbox" name="faq" id="eighth">
               <label for="eighth">Do you offer a Ditigal Invitation?</label>
               <div class="content">
-                <p>A: Yes, we offer various types of e-invites, including video invitations, website invitations, and flipbook invitations.</p>
+                <p>A: Yes, we offer various types of e-invites, including video invitations, website invitations, and
+                  flipbook invitations.</p>
               </div>
             </li>
           </ul>
@@ -292,14 +297,17 @@
       <div class="footer-container">
         <div class="footer-outro">
           <h3>Mamsh Paimbita</h3>
-          <p class="animate-delay" style="transition-delay: 0.2s;">Whether your event is a casual cocktail party or a black-tie affair, the invitation is the first impression your guests will have. An interesting invitation creates a sense of excitement and anticipation. I am here to help you with all of your needs.</p>
+          <p class="animate-delay" style="transition-delay: 0.2s;">Whether your event is a casual cocktail party or a
+            black-tie affair, the invitation is the first impression your guests will have. An interesting invitation
+            creates a sense of excitement and anticipation. I am here to help you with all of your needs.</p>
         </div>
         <div class="footer-items-container">
           <div class="footer-items">
             <ul>
               <li class="animate-delay" style="transition-delay: 0.3s;"><a href="#">Product</a></li>
               <li class="animate-delay" style="transition-delay: 0.4s;"><a href="#">Overview</a></li>
-              <li class="animate-delay" style="transition-delay: 0.5s;"><a href="https://shopee.ph/marissearenascayabyab" target="_blank">Marketplace</a></li>
+              <li class="animate-delay" style="transition-delay: 0.5s;"><a
+                  href="https://shopee.ph/marissearenascayabyab" target="_blank">Marketplace</a></li>
               <li class="animate-delay" style="transition-delay: 0.6s;"><a href="#">Page</a></li>
             </ul>
           </div>
@@ -311,7 +319,7 @@
               <li class="animate-delay" style="transition-delay: 1s;"><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="footer-items">
+          <div id="contact-footer" class="footer-items">
             <ul>
               <li class="animate-delay" style="transition-delay: 1.1s;"><a href="#">Get your invitation now</a></li>
               <li class="animate-delay" style="transition-delay: 1.2s;"><a href="#">Contact page below</a></li>
@@ -331,29 +339,46 @@
         </div>
 
         <div class="icons">
-          <a href="https://www.facebook.com/mamshpaimbitainvitations" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="https://shopee.ph/marissearenascayabyab" target="_blank"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-          <a href="https://www.tiktok.com/@mamsh_paimbita" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/mamshpaimbitainvitations" target="_blank"><i class="fa fa-facebook"
+              aria-hidden="true"></i></a>
+          <a href="https://shopee.ph/marissearenascayabyab" target="_blank"><i class="fa fa-shopping-bag"
+              aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@mamsh_paimbita" target="_blank"><i class="fa fa-youtube-play"
+              aria-hidden="true"></i></a>
         </div>
       </div>
-      
+
     </section>
   </footer>
-
   <script src="index.js"></script>
-
   <script>
-    $(document).ready(function () {
-      $('a.fluidbox').fluidbox();
 
-      // Close Fluidbox on window scroll
-      $(window).scroll(function () {
-        $('a.fluidbox').fluidbox('close');
-      });
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-    });
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Automatic slideshow
+    setInterval(() => { showSlides(slideIndex += 1); }, 5000);
+
   </script>
-
 </body>
 
 </html>

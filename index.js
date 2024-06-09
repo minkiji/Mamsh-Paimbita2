@@ -53,31 +53,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Hamburger menu
+const hamburgerMenu = document.querySelector('.hamburger_menu');
+const navMenu = document.querySelector('.nav_menu');
 
-// Automatic slideshow
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('open');
+    if (navMenu.classList.contains('show')) {
+        navMenu.classList.remove('show');
+        setTimeout(() => {
+            navMenu.style.display = 'none';
+        }, 400); // Matches the transition duration
+    } else {
+        navMenu.style.display = 'flex';
+        setTimeout(() => {
+            navMenu.classList.add('show');
+        }, 10); // Small delay to trigger the transition
     }
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-}
-
-// Automatic slideshow
-setInterval(() => { showSlides(slideIndex += 1); }, 5000);
+});
 
 
